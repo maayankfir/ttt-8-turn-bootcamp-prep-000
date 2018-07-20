@@ -35,13 +35,3 @@ def turn(board)
   input = gets.strip
 
 end
-
-
-
-
-
-
-
-
-
-
