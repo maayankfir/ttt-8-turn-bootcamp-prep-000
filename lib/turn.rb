@@ -4,7 +4,10 @@ def display_board(board)
   puts " #{board[3]} | #{board[4]} | #{board[5]} "
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
+end
 
+def turn(board)
+  puts "Please enter 1-9:"
 end
 
 def input_to_index(user_input)
@@ -31,6 +34,4 @@ def move(board, input_to_index, current_player = "X")
   board[input_to_index] = current_player
 end
 
-def turn(board)
-  puts "Please enter 1-9:"
-end
+
