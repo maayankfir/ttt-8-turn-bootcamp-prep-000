@@ -2,6 +2,7 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
+  if
  end
 
 def display_board(board)
@@ -20,18 +21,18 @@ def move(board, input_to_index, current_player = "X")
   board[input_to_index] = current_player
 end
 
-def position_taken?(board, index)
-if board[index] == " " || board[index] == "" || board[index] == nil
-  false
-else
-  true
-end
-end
-
 def valid_move?(board, index)
 if index.between?(0, 8) && position_taken?(board, index) == false
   true
 else
   nil
+end
+end
+
+def position_taken?(board, index)
+if board[index] == " " || board[index] == "" || board[index] == nil
+  false
+else
+  true
 end
 end
